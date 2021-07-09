@@ -31,8 +31,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   void getBase64() async {
     String? _base64 = await _globalKey.currentState!.toBase64;
-      print("BASE64 DATA : $_base64");
+    print("BASE64 DATA : $_base64");
   }
+
   void getBytes() async {
     Uint8List? bytes = await _globalKey.currentState!.toBytes;
     print("BYTES : $bytes");
@@ -43,6 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   GlobalKey<SignaturePadState> _globalKey = new GlobalKey<SignaturePadState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

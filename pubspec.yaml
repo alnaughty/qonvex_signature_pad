@@ -1,7 +1,7 @@
 name: qonvex_signature_pad
-description: Qonvex signature pad.
+description: A new flutter package used to create a signature pad. This supports all platforms.
 version: 0.0.1
-homepage:
+homepage: https://github.com/alnaughty/qonvex_signature_pad.git
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

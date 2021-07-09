@@ -1,6 +1,6 @@
 # qonvex_signature_pad
 
-A Flutter package for signature pad.
+A new flutter package used to create a signature pad. This supports all platforms including Desktop and Web.
 
 ## NOTE:
  ### FOR WEB
@@ -8,4 +8,4 @@ A Flutter package for signature pad.
  #### Example:
  `flutter run -d chrome --dart-define=FLUTTER_WEB_AUTO_DETECT=true`
 
- 
+
