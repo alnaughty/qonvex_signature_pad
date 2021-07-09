@@ -4,4 +4,6 @@
 
 ## 0.0.2
 
-* Modify Pad name to QonvexSignaturePad
+* modify pad name to QonvexSignaturePad
+* modify example
+* added more details on QonvexSignaturePad in example
