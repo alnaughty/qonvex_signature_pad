@@ -54,6 +54,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: QonvexSignaturePad(
         key: _globalKey,
+        strokeCap: StrokeCap.round,
+        thickness: 5,
+        signatureColor: Colors.red,
       ),
     );
   }
