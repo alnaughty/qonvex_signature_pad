@@ -43,7 +43,8 @@ class _MyHomePageState extends State<MyHomePage> {
     _globalKey.currentState!.clearPoints();
   }
 
-  GlobalKey<SignaturePadState> _globalKey = new GlobalKey<SignaturePadState>();
+  GlobalKey<QonvexSignaturePadState> _globalKey =
+      new GlobalKey<QonvexSignaturePadState>();
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: SignaturePad(
+      body: QonvexSignaturePad(
         key: _globalKey,
       ),
     );

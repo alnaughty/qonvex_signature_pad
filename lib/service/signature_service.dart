@@ -4,12 +4,13 @@ import 'dart:ui' as ui;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/rendering.dart';
 
-class SignatureService {
-  SignatureService._private();
+class QonvexSignatureService {
+  QonvexSignatureService._private();
 
-  static final SignatureService _instance = SignatureService._private();
+  static final QonvexSignatureService _instance =
+      QonvexSignatureService._private();
 
-  static SignatureService get instance => _instance;
+  static QonvexSignatureService get instance => _instance;
 
   /// Convert signature to byte
   Future<Uint8List?> bytes(GlobalKey globalKey) async {

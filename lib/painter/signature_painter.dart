@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SignaturePainter extends CustomPainter {
-  SignaturePainter(
+class QonvexSignaturePainter extends CustomPainter {
+  QonvexSignaturePainter(
       {required this.points,
       required this.signatureColor,
       required this.thickness,

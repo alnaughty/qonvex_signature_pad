@@ -4,13 +4,13 @@ import 'package:qonvex_signature_pad/painter/signature_painter.dart';
 import 'dart:async';
 import 'package:qonvex_signature_pad/service/signature_service.dart';
 
-class SignaturePad extends StatefulWidget {
+class QonvexSignaturePad extends StatefulWidget {
   final bool renderWithBackground;
   final Color signatureColor;
   final double thickness;
   final StrokeCap strokeCap;
 
-  SignaturePad(
+  QonvexSignaturePad(
       {Key? key,
       this.renderWithBackground = true,
       this.signatureColor = Colors.black,
@@ -19,10 +19,10 @@ class SignaturePad extends StatefulWidget {
       : super(key: key);
 
   @override
-  SignaturePadState createState() => SignaturePadState();
+  QonvexSignaturePadState createState() => QonvexSignaturePadState();
 }
 
-class SignaturePadState extends State<SignaturePad> {
+class QonvexSignaturePadState extends State<QonvexSignaturePad> {
   /// Signature points offset container
   /// this will be passed to our painter
   List<Offset?> _points = [];
@@ -35,7 +35,7 @@ class SignaturePadState extends State<SignaturePad> {
   GlobalKey _repaintKey = new GlobalKey();
 
   /// Contains our signature services
-  final SignatureService _service = SignatureService.instance;
+  final QonvexSignatureService _service = QonvexSignatureService.instance;
 
   /// points or signature eraser or can reset our signature
   void clearPoints() {
@@ -81,7 +81,7 @@ class SignaturePadState extends State<SignaturePad> {
             });
           },
           child: CustomPaint(
-            painter: SignaturePainter(
+            painter: QonvexSignaturePainter(
                 points: _points,
                 thickness: widget.thickness,
                 strokeCap: widget.strokeCap,
